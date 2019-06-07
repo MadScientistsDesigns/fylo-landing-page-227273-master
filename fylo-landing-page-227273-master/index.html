@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-   <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- link to favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -10,29 +11,45 @@
   <title>Frontend Mentor | Beta sign up split layout Challenge</title>
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/25174bcf6b.js"></script>
   <!-- custom stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>All your files in one secure location, accessible anywhere.</h1>
-  
-  <p>Fylo stores all your most important files in one secure location. 
-    Access them wherever you need, share and collaborate with friends, 
-    family and co-workers.</p>
-  
-  <h3>Sign up for early access</h3>
-  
-  <input type="email" name="" id="">
-  <button>Sign Up</button>
-  
-   <a href="http://" target="_blank">Privacy Policy</a> 
-  
 
+<body>
+  <div class="flex-container">
+    <aside>
+      <img src="images/illustration-main.svg" alt="Main Illustration">
+    </aside>
+
+    <article class="content">
+      <header>
+        <img src="images/logo.svg" alt="Logo">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fas fa-envelope"></i>
+      </header>
+    
+      <div class="description">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>Fylo stores all your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family and co-workers.</p>
+        <h3>Sign up for early access</h3>
+        <input type="email" name="email" id="email">
+        <button>Sign Up</button>
+      </div>
+    
+      <a href="http://" target="_blank">Privacy Policy</a>
+    </article>
+    </div>
   <footer>
     <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
+      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a> 🎉
     </p>
   </footer>
 </body>
+
 </html>
