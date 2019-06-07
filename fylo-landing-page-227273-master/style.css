@@ -19,23 +19,30 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 650px;
 }
 
 /* aside */
 aside {
     display: flex;
     flex-wrap: wrap;
+    flex: 40%;
     background-image: linear-gradient(hsl(243, 87%, 12%),hsl(244, 37%, 55%));
-    width: 40%;
     justify-content: center;
     align-items: center;
-    height: 550px;
+    /* border: 2px solid red; */
+    height: 95vh;
+    /* order: 1; */
 }
 
 aside img {
-    display: block;
-    max-width:70%;
-    height:auto;
+    display: flex;
+    max-width:60%;
+    height:60%;
+    justify-content: center;
+    align-items: center;
 }
 /* end aside */
 
@@ -43,14 +50,18 @@ aside img {
 article {
     display: flex;
     flex-direction: column;
-    width: 45%;
-    padding: 2% 7%;
-    height: 550px;
+    flex: 55%;
+    width: 580px;
+    height: 95vh;
 }
 
 nav {
     display: flex;
     flex-direction: row;
+    /* border: 2px solid red; */
+    padding-left: 7%;
+    padding-top: 5%;
+    /* order: 2; */
 }
 
 nav img {
@@ -67,39 +78,67 @@ nav i {
 
 .description {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 25%;
-
+    flex-direction: column;   
+    padding: 25% 7% 25% 7%;
+    /* order: 4; */
+    /* border: 2px solid red; */
 }
 
 input {
     height: 40px;
-    width: 60%;
+    width: 260px;
     box-shadow: 2px 2px 2px hsl(0, 1%, 77%);
     border: 0;
     border-radius: 5px;
     margin-right: 10px;
+    /* order: 5; */
 }
 
 button {
     height: 42px;
-    width: 30%;
+    width: 140px;
     border: 0;
     border-radius: 5px;
     box-shadow: 2px 2px 2px hsl(0, 1%, 77%);
     background: hsl(163, 95%, 43%);
     color: white;
+    /* order: 6; */
 }
 
-article a {
+.privacy {
+    display: flex;
     font-size: 12px;
-    margin-top: 25%;
-    margin-left: 80%;
+    padding-left: 80%;
+    /* order: 7; */
 }
 /* end article */
 
 footer {
+    display: flex;
+    width: 100vw;
     margin: 0 auto;
-    text-align: center;
+    justify-content: center;
+    /* order: 8; */
 }
+
+/* responsive screen sizing */
+  @media only screen and (max-width: 375px) {
+    aside {
+        background: white;
+        background-image: url(images/bg-intro.svg);
+        /* height: 50vh; */
+    }
+    aside img {
+        height: 30%;
+        width: 30%;
+    }
+    nav {
+        
+    }
+    nav img {
+        padding-right: 48%;
+    }
+    .privacy {
+        padding-left: 70%;
+    }
+  }
